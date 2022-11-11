@@ -3,7 +3,7 @@ name: build-windows
 on: 
   push:
     branches:
-      - master
+      - fix-window-prebuilds
 
 jobs:
   build:
