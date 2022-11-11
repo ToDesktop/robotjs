@@ -3,7 +3,7 @@ name: build-linux
 on: 
   push:
     branches:
-      - fix-window-prebuilds
+      - master
 
 jobs:
   build:
