@@ -48,7 +48,7 @@ async function parseManifest() {
 
 async function prepareArtifacts({ prebuildsDir, tag, zip }) {
   const artifactsZip = `${tag}.zip`;
-  const zipDir = path.join(prebuildsDir, artifactsZip);
+  const zipDir = path.join(prebuildsDir, "../", artifactsZip);
 
   if (process.platform === "win32") {
     await execScript(`mkdir ${zipDir}`);
