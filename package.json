@@ -11,7 +11,7 @@
     "test:win32": "jasmine test/**/*.js",
     "install": "node-gyp-build",
     "install-debug": "prebuild-install --verbose || node-gyp rebuild --debug",
-    "prebuild": "prebuildify --target -t node@15.0.0 -t node@16.0.0 -t node@18.0.0 -t node@20.0.0 -t electron@23.0.0  -t electron@24.0.0  -t electron@25.0.0  -t electron@26.0.0 -t electron@27.0.0",
+    "prebuild": "prebuildify --target -t node@15.0.0 -t node@16.0.0 -t node@18.0.0 -t node@20.0.0 -t electron@26.0.0  -t electron@27.0.0  -t electron@30.0.0",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
     "publish": "npm publish"
@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/ToDesktop/robotjs-prebuild",
   "dependencies": {
-    "@todesktop/nan": "^2.17.0",
+    "nan": "^2.19.0",
     "cross-zip": "^4.0.0",
     "node-addon-api": "^5.0.0",
     "node-gyp-build": "^4.5.0",
@@ -53,12 +53,12 @@
     "prebuildify": "^5.0.1"
   },
   "devDependencies": {
-    "electron": "^21.0.0",
-    "electron-rebuild": "^3.2.9",
-    "node-abi": "^3.47.0",
-    "node-gyp": "^9.1.0"
+    "electron": "^30.0.0",
+    "@electron/rebuild": "^3.6.0",
+    "node-abi": "^3.62.0",
+    "node-gyp": "^10.1.0"
   },
   "overrides": {
-    "node-gyp": "^9.1.0"
+    "node-gyp": "^10.1.0"
   }
 }
