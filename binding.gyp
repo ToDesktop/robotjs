@@ -9,7 +9,7 @@
             "<!(node -e \"require('nan')\")",
         ],
         'cflags_cc': [
-            '-std=c++17',
+            '-std=c++20',
             '-fno-rtti',
             '-fno-exceptions',
         ],
@@ -23,7 +23,7 @@
         'conditions': [
             ['OS == "mac"', {
                 'xcode_settings': {
-                    'CLANG_CXX_LANGUAGE_STANDARD': 'c++17'
+                    'CLANG_CXX_LANGUAGE_STANDARD': 'c++20'
                 },
                 'include_dirs': [
                     'System/Library/Frameworks/CoreFoundation.Framework/Headers',
