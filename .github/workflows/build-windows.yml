@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       # - run: choco upgrade nodejs.install
       # - run: choco install nodejs --version 20.0.0
-      - run: choco install python visualstudio2017-workload-vctools -y
+      - run: choco install python visualstudio2017-workload-vctools -y --ignore-dependecies
       - run: npm install
       - run: npm run prebuild
         env:
