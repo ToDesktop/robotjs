@@ -49,14 +49,13 @@
     "cross-zip": "^4.0.0",
     "nan": "^2.22.0",
     "node-addon-api": "^5.0.0",
-    "node-gyp-build": "^4.8.4",
+    "node-gyp-build": "^4.5.0",
     "patch-package": "^6.4.7",
-    "prebuildify": "^6.0.1"
+    "prebuildify": "^5.0.1"
   },
   "devDependencies": {
     "@electron/rebuild": "^3.6.0",
-    "electron": "^30.0.0",
-    "node-abi": "^3.62.0",
+    "node-abi": "^3.71.0",
     "node-gyp": "^10.1.0"
   },
   "overrides": {
