@@ -66,7 +66,7 @@
                         "LanguageStandard": "stdcpp17",
                         "AdditionalOptions": "/ZW",
                     }
-                }
+                },
                 "msvs_settings": {
                     "VCCLCompilerTool": {
                         "AdditionalOptions": ["/std:c++20"],
