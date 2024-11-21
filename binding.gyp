@@ -60,7 +60,7 @@
                 'defines': ['IS_WINDOWS'],
                 "msbuild_settings": {
                     "ClCompile": {
-                        "LanguageStandard": "stdcpp17"
+                        "LanguageStandard": "stdcpp20"
                     }
                 }
             }]
