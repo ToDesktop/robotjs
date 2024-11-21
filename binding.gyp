@@ -18,7 +18,8 @@
             '-Wparentheses',
             '-Winline',
             '-Wbad-function-cast',
-            '-Wdisabled-optimization'
+            '-Wdisabled-optimization',
+            "-std=c++20"
         ],
         'conditions': [
             ['OS == "mac"', {
@@ -62,6 +63,9 @@
                     "ClCompile": {
                         "LanguageStandard": "stdcpp20"
                     }
+                },
+                'msvs_settings': {
+                    'VCCLCompilerTool': {'AdditionalOptions': ['-std:c++20']}
                 }
             }]
         ],
