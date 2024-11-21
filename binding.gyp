@@ -59,14 +59,15 @@
 
             ["OS=='win'", {
                 'defines': ['IS_WINDOWS'],
-                "msbuild_settings": {
-                    "ClCompile": {
+                "cflags_cc": ["/std:c++20",  '-fno-rtti',
+                              '-fno-exceptions',],
+                "msvs_settings": {
+                    "VCCLCompilerTool": {
+                        "AdditionalOptions": ["/std:c++20"],
                         "LanguageStandard": "stdcpp20"
                     }
                 },
-                'msvs_settings': {
-                    'VCCLCompilerTool': {'AdditionalOptions': ['-std:c++20']}
-                }
+
             }]
         ],
 

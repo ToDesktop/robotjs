@@ -14,7 +14,7 @@ jobs:
       # - run: choco install nodejs --version 20.0.0
       - run: choco upgrade chocolatey --version 1.4.0 --allow-downgrade
       - name: install visualstudio tools
-        run: choco install python visualstudio2017-workload-vctools -y
+        run: choco install python visualstudio2022-workload-vctools -y
         continue-on-error: true
       - run: npm install
       - run: npm run prebuild
