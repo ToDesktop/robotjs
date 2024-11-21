@@ -61,12 +61,6 @@
                 'defines': ['IS_WINDOWS'],
                 "cflags_cc": ["/std:c++20",  '-fno-rtti',
                               '-fno-exceptions',],
-                "msbuild_settings": {
-                    "ClCompile": {
-                        "LanguageStandard": "stdcpp17",
-                        "AdditionalOptions": "/ZW",
-                    }
-                },
                 "msvs_settings": {
                     "VCCLCompilerTool": {
                         "AdditionalOptions": ["/std:c++20"],
