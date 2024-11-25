@@ -19,7 +19,6 @@
             '-Winline',
             '-Wbad-function-cast',
             '-Wdisabled-optimization',
-            "-std=c++20"
         ],
         'conditions': [
             ['OS == "mac"', {
