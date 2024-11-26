@@ -9,7 +9,7 @@
     "test:darwin:linux": "jasmine test/**/*.js",
     "test-keyboard": "node test/keyboard.js",
     "test:win32": "jasmine test/**/*.js",
-    "install": "node-gyp-build",
+    "install": "todesktop-node-gyp-build",
     "install-debug": "prebuild-install --verbose || node-gyp rebuild --debug",
     "prebuild": "prebuildify --target -t node@23.0.0 -t node@22.0.0 -t node@21.0.0 -t node@20.0.0 -t node@19.0.0 -t node@18.0.0 -t node@14.0.0 -t electron@33.0.0 -t electron@30.0.0",
     "release:minor": "npm version minor && npm publish",
@@ -46,9 +46,9 @@
   "homepage": "https://github.com/ToDesktop/robotjs-prebuild",
   "dependencies": {
     "@todesktop/nan": "^2.23.0",
+    "@todesktop/node-gyp-build": "^4.8.6",
     "cross-zip": "^4.0.0",
     "node-addon-api": "^5.0.0",
-    "node-gyp-build": "^4.5.0",
     "prebuildify": "^5.0.1"
   },
   "devDependencies": {

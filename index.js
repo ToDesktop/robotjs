@@ -1,4 +1,4 @@
-var robotjs = require('node-gyp-build')(__dirname)
+var robotjs = require('@todesktop/node-gyp-build')(__dirname)
 
 module.exports = robotjs;
 
